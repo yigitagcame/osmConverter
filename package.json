@@ -1,0 +1,20 @@
+{
+  "name": "osm-to-geojson-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yiitinki/osmToGeoJsonConverter.git"
+  },
+  "author": "Yigit Agca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiitinki/osmToGeoJsonConverter/issues"
+  },
+  "homepage": "https://github.com/yiitinki/osmToGeoJsonConverter#readme"
+}
