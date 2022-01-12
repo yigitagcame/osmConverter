@@ -41,6 +41,7 @@ npm run prd
 {GET} http://localhost:3000/{minLongitude}/{minLatitude}/{maxLongitude}/{maxLatitude}
 
 **Request**
+
 Longitudes must between -90 and 90. Latitudes must between -180 and 180.
 
 [float] minLongitude
@@ -52,13 +53,16 @@ Longitudes must between -90 and 90. Latitudes must between -180 and 180.
 [float] maxLatitude
 
 **Response**
+
  Successful :
+
 {
 "type": "FeatureCollection",
 "features": [...]
 }
 
 Unsuccessful:
+
 "ERROR MESSAGE HERE"
 
 ## Test
