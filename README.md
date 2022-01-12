@@ -1,29 +1,15 @@
-
 # OSM Converter
-
-  
-  
 
 OSM data converter.
 
-  
-  
+
 
 ## Install
 
-  
 
 ```
-
-  
-
 npm install
-
-  
-
 ```
-
-  
 
 ## Run
 
@@ -32,44 +18,25 @@ npm install
 In development mode
 
 ```
-
-  
-
 npm start
-
-  
-
 ```
 
 or
 
 ```
-
-  
-
 npm run dev
-
-  
-
 ```
 
 In production mode
 
 ```
-
-  
-
 npm run prd
-
-  
-
 ```
 
   
 
 ## Use
 
-  
 
 {GET} http://localhost:3000/{minLongitude}/{minLatitude}/{maxLongitude}/{maxLatitude}
 
@@ -95,15 +62,7 @@ Unsuccessful:
 
 ## Test
 
-  
-  
 
 ```
-
-  
-
 npm run test
-
-  
-
 ```
