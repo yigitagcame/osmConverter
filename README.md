@@ -33,11 +33,13 @@ npm run prd
 
 ```
 
+## Use
+
+http://localhost:3000/{minLongitude}/{minLatitude}/{maxLongitude}/{maxLatitude}
   
 
 ## Test
 
-  
 
 ```
 
