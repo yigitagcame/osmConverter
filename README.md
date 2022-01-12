@@ -42,6 +42,7 @@ npm run prd
 
 **Request**
 Longitudes must between -90 and 90. Latitudes must between -180 and 180.
+
 [float] minLongitude
 
 [float] minLatitude
