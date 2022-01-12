@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "npm run dev",
+    "dev": "nodemon app.js",
+    "prd": "NODE_ENV=production node app.js",
     "test": "jest"
   },
   "repository": {
@@ -16,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/yiitinki/osmToGeoJsonConverter/issues"
   },
-  "homepage": "https://github.com/yiitinki/osmToGeoJsonConverter#readme"
+  "homepage": "https://github.com/yiitinki/osmToGeoJsonConverter#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.2",
+    "osmtogeojson": "^3.0.0-beta.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  }
 }
