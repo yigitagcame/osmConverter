@@ -10,15 +10,18 @@ OsmMapController.get = async function(req, res) {
     req.params.maxLat,
   ];
 
-  const [osmStatus, osmResponse] = await HttpRequestService.get('https://www.openstreetmap.org/api/0.6/map', {bbox: coordinates.join(',')});
+  let [httpStatus, httpResponse] = await HttpRequestService.get('https://www.openstreetmap.org/api/0.6/map', {bbox: coordinates.join(',')});
 
-  if (osmStatus != 200) return res.send(osmResponse);
+  if (httpStatus != 200) return res.status(httpStatus).json(httpResponse);
 
-  const geoJson = OsmConverterService.toGeoJson(osmResponse);
+  let geoJson = OsmConverterService.toGeoJson(httpResponse);
 
-  if (!geoJson) geoJson = 'Invalid Osm Data!';
+  if (!geoJson) {
+    httpStatus = 400;
+    geoJson = 'Invalid Osm Data!';
+  }
 
-  return res.send(geoJson);
+  return res.status(httpStatus).json(geoJson);
 };
 
 module.exports = OsmMapController;
