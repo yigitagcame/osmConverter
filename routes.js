@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const OsmMapController = require('./controllers/OsmMapController');
 
-// define the home page route
-router.get('/', function(req, res) {
-  res.send('Hello World!');
-});
+router.get('/:minLong/:minLat/:maxLong/:maxLat', OsmMapController.get);
 
 module.exports = router;
